@@ -1,0 +1,17 @@
+<!-- This is the profile page partial. Add HTML here. -->
+<div id="profile-container">
+  <h1>profile</h1>
+  <h3>Welcome, {{ userDetails.name }}!</h3>
+  <div id="image-container">
+    <img src="{{ userDetails.img }}" title="{{ userDetails.name }}" alt="{{ userDetails.name }}"/>
+  </div>
+  <div id="info-container">
+    <ul>
+      <li>Email: {{ userDetails.email }}</li>
+      <li>Phone Number: {{ userDetails.phone }}</li>
+      <li>Location: {{ userDetails.location }}</li>
+    </ul>
+  </div>
+  <div class="clear-fix"></div>
+  <p id="edit-profile"><a href="#">Edit Profile</a></p>
+</div>
